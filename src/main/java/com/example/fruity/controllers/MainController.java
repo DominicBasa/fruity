@@ -21,8 +21,8 @@ public class MainController {
         fruits.add(new Item("Goji Berries", 4.0));
         fruits.add(new Item("Guava", .75));
         
-        // Add fruits your view model here
-        
+        //this is to send the whole array above to the front end
+        model.addAttribute("fruits", fruits);
         return "index.jsp";
     }
 

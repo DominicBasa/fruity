@@ -1,6 +1,5 @@
 package com.example.fruity.models;
 
-import org.springframework.web.bind.annotation.RequestMapping;
 
 public class Item {
 
@@ -13,5 +12,22 @@ public class Item {
     this.name = name;
     this.price = price;
   }
+  
   // As always, don't forget to generate Getters and Setters!
+  public String getName() {
+    return this.name;
+
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public double getPrice() {
+    return this.price;
+  }
+
+  public void setPrice(double price) {
+    this.price = price;
+  }
 }

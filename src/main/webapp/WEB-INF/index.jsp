@@ -21,5 +21,25 @@ pageEncoding="UTF-8"%>
 		<script type="text/javascript" src="/js/app.js"></script>
 		<!-- change to match your file/naming structure -->
 	</head>
-	<body></body>
+	<body>
+		<div class="container">
+			<h1>Fruit Store</h1>
+
+			<table class="table table-hover border border-5">
+				<tbody>
+					<tr>
+						<th>Name</th>
+						<th>Price</th>
+					</tr>
+
+					<c:forEach var="fruit" items="${fruits}">
+						<tr>
+							<td><c:out value="${fruit.name}" /></td>
+							<td><c:out value="${fruit.price}" /></td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+		</div>
+	</body>
 </html>
